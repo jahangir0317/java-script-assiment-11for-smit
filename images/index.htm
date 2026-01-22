@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Events Simple</title>
+</head>
+<body>
+
+<!-- Question No 1 -->
+<a href="#" onclick="alert('Hello')">Click Here</a>
+
+<hr>
+
+<!-- Question No 2 -->
+<img src="image.png" width="100" onclick="alert('Thanks for purchasing')" />
+<img src="image.png" width="100" onclick="alert('Thanks for purchasing')" />
+
+<hr>
+
+<!-- Question No 3 -->
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Delete</th>
+    </tr>
+    <tr>
+        <td>Ali</td>
+        <td><button onclick="this.parentNode.parentNode.remove()">Delete</button></td>
+    </tr>
+    <tr>
+        <td>Mark</td>
+        <td><button onclick="this.parentNode.parentNode.remove()">Delete</button></td>
+    </tr>
+</table>
+
+<hr>
+
+<!-- Question No 4 -->
+<img src="image.png" width="150"
+     onmouseover="this.src='image2.jfif'"
+     onmouseout="this.src='image.png'">
+
+<hr>
+
+<!-- Question No 5 -->
+<h2 id="num">0</h2>
+<button onclick="num.innerText = parseInt(num.innerText)+1">Increase</button>
+<button onclick="num.innerText = parseInt(num.innerText)-1">Decrease</button>
+
+</body>
+</html>
+
